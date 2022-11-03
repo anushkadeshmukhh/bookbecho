@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -111,5 +111,95 @@ input[type=submit]:hover {
   </form>
 </div>
 
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <a href="main.html"></a>
+        <div>
+            
+            <!--<div class="login-form">
+                <form action="add_book/" method="post">
+                    <h1>Hey Seller</h1>
+                    <h4>Please fill the following details</h4>
+                    <div class="content">
+                        <div class="input-field">
+
+                            <input type="text" placeholder="Name of book" name="b_name" autocomplete="nope">
+                            <input type="text" placeholder="Branch" name="branch" autocomplete="nope">
+                            <input type="text" placeholder="Year" name="year" autocomplete="nope">
+                            <input type="text" placeholder="MRP" name="mrp" autocomplete="nope">
+                            <input type="text" placeholder="Selling Price" name="sp" autocomplete="nope">
+                            <input type="text" placeholder="Autors" name="author" autocomplete="nope">
+                            <input type="text" placeholder="Publications" name="pub" autocomplete="nope">
+
+
+                            <div class="condition">
+                                <div class="condi">
+                            <br>
+                            <p>Select the condition of your book</p>
+                            <input type="radio" name="coding" id="" value="Excellent">Excellent
+                            <input type="radio" name="coding" id="" value="Good">Good
+                            <input type="radio" name="coding" id="" value="Low">Low but usable
+                            
+                            </div>
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="action" >
+                        <a href="add_book">Upload</a>
+                    </div>
+                </form>
+            </div>-->
+
+            <div class="login-form">
+              <form action="add_book" method="post">
+                  <h1>Login</h1>
+                  <div class="content">
+                      <div class="input-field">
+                        <input type="text" placeholder="Name of book" name="b_name" autocomplete="nope">
+                        <input type="text" placeholder="Branch" name="branch" autocomplete="nope">
+                        <input type="text" placeholder="Year" name="year" autocomplete="nope">
+                        <input type="text" placeholder="MRP" name="mrp" autocomplete="nope">
+                        <input type="text" placeholder="SP" name="sp" autocomplete="nope">
+                        <input type="text" placeholder="Autors" name="author" autocomplete="nope">
+                        <input type="text" placeholder="Publications" name="pub" autocomplete="nope">
+
+
+                        <div class="condition">
+                            <div class="condi">
+                        <br>
+                        <p>Select the condition of your book</p>
+                        <input type="radio" name="coding" id="" value="Excellent">Excellent
+                        <input type="radio" name="coding" id="" value="Good">Good
+                        <input type="radio" name="coding" id="" value="Low">Low but usable
+                        
+                        </div>
+
+                    </div>
+                      </div>
+                      <!-- <div class="input-field">
+                          
+                      </div> -->
+                  </div>
+                  <div class="action">
+                      <button>Upload</button>
+                  </div>
+              </form>
+          </div>
+        
+        </div>
+    
 </body>
 </html>

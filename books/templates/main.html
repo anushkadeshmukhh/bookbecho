@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'it.css' %}">
+    <link rel="stylesheet" href="main.js">
+</head>
+<body>
+    <!-- <a href="signup.html"></a> -->
+    <div class="mainpg">
+    <nav>
+    
+        <a href="index.html"><img src="{% static 'logooo.jpg' %}" alt=""></a>
+        <div class="nav-links">
+            <!--id="navLinks"-->
+            <!-- <i class="fa fa-times" on click="hideMenu()"></i> -->
+            <ul>
+                <!-- <li><a href="">Home</a></li> -->
+                <li><a href="http://127.0.0.1:8000/login/check_user/seller/">I Would Like To Sell</a></li>
+                <h1>Welcome {{name}} </h1>
+                
+            </ul>
+    
+        </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Filter</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a href="fe">First Year</a>
+                <a href="comp">Computer Engineering</a>
+                <a href="it">Information Technology</a>
+                <a href="entc">Electronics and Communication</a>
+            </div>
+        </div>
+    <!-- <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div> -->
+        <!--books-->
+        <!-- <div class="dropdown">
+            <div class="default-opn">Filter</div>
+            <ul>
+                <li>First Year</li>
+                <li>Computer Engineering</li>
+                <li>Information Technology</li>
+                <li>Electronics and Telecommunication</li>
+            </ul>
+        </div> -->
+        <!-- <div class="search-field">
+            <input type="text" class="input" placeholder="Serach">
+        </div> -->
+
+        <section class="books">
+            <h1>Latest Additions</h1>
+            <p>Take a look at these newly added books!</p>
+            
+    <h1>Welcome  </h1>
+    {% for x,y in rs %}
+
+
+    <div class="row">
+        
+
+<br>
+<br>
+<div class="card">
+<h1> {{ x }}</h1>
+<p class="price">Rs.{{ y }}</p>
+<p><a href="buyer"><button>Add to Cart</button></a></p>
+</div>
+
+
+</div>
+{% endfor %}
+
+                   
+                </div>
+            </div>
+        </section>
+        <!-- <i class="fa fa-bars" on click="showMenu()"></i> -->
+    </nav>
+    
+    <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        function filterFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            div = document.getElementById("myDropdown");
+            a = div.getElementsByTagName("a");
+            for (i = 0; i < a.length; i++) {
+                txtValue = a[i].textContent || a[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    a[i].style.display = "";
+                } else {
+                    a[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

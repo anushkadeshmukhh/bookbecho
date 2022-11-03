@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookIO</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    
+</head>
+<body>
+    <section class="header">
+        <nav>
+            
+            <a href=""><img src="{% static 'logooo.jpg' %}" alt=""></a>
+            <div class="nav-links" > <!--id="navLinks"-->
+                <!-- <i class="fa fa-times" on click="hideMenu()"></i> -->
+                <ul>
+                    <!-- <li><a href="">Home</a></li> -->
+                    <li><a href="#abt">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+
+            </div>
+            <!-- <i class="fa fa-bars" on click="showMenu()"></i> -->
+        </nav>
+        <div class="text-box">
+            <h1>
+                BookIO
+            </h1>
+            <h2>
+                Second Hand Book Exchange Website
+            </h2>
+            <a href="login" class="hero-btn1">Login</a>
+            <link rel="stylesheet" href="login.html">
+            <a href="signup" class="hero-btn2">Sign Up</a>
+        </div>
+    </section>
+   <!--about-->
+    <section class="about">
+        <h1 id="abt">About Us</h1>
+        <p>This is our DBMS Mini-Project. It is part of our curriculum.</p>
+        <div class="row">
+            <div class="about-col">
+                <h3>Buying</h3>
+                <p>Here users can buy Engineering books second hand</p>
+
+            </div>
+            <div class="about-col">
+                <h3>Selling</h3>
+                <p>Here users can sell there old books. It can be of great use to others</p>
+            
+            </div>
+            
+        </div>
+    </section>
+
+    <!--contat-->
+
+    <section class="contactus">
+        <h1 id="contact">To know more</h1>
+    
+    </section>
+    <!-- <script>
+
+        var navLinks= document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.styles.right="0";
+        }
+               function hideMenu() {
+                    navLinks.styles.right = "-200px";
+                }
+    </script> -->
+
+    <!--footer-->
+    <section class="footer">
+        <h4>Web Team</h4>
+        <p>Manas Deshpande Anushka Deshmukh</p>
+
+    </section>
+
+    
+</body>
+</html>
